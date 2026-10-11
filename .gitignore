@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+.svelte-kit/
+build/
+.vite/
+.vitest/
+coverage/
+*.tsbuildinfo
+vite.config.*.timestamp-*
+
+# Secrets: API keys and OAuth client secrets live only in .env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local app data: SQLite with the Last.fm session key and cached Scrobbles
+data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.fleet/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local tooling: BMAD installation and render cache, Claude Code local settings
+_bmad/
+.claude/settings.local.json
